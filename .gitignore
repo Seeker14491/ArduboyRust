@@ -1,1 +1,2 @@
-ArduboyRustHost/lib/*.a
+/target
+/.idea

@@ -5,27 +5,6 @@ Arduboy2 arduboy;
 ArduboyTones sound(arduboy.audio.enabled);
 
 extern "C" {
-    int __ashlsi3 (int a, int b) {
-        return a << b;
-    }
-
-    int __ashrsi3 (int a, int b) {
-        return a >> b;
-    }
-
-    int __lshrsi3 (int a, int b) {
-        return (unsigned int) a >> b;
-    }
-
-    unsigned long long __divmodti4 (long long a, long long b, long long *c) {
-        *c = a % b;
-        return a / b;
-    }
-
-    long mod_i32(long a, long b) {
-        return a % b;
-    }
-
     long arduino_random_between(long min, long max) {
         return random(min, max);
     }

@@ -1,0 +1,2 @@
+[workspace]
+members = ["arduboy-rs", "examples/pong"]
